@@ -43,27 +43,32 @@ function Sidebar() {
                 <LogoComponent />
             </div>
             <MenuItem
-                id="/medicine"
-                items={["/medicine/name", "/medicine/category"]}
-                title="Find Medicine"
+                id="/ideas1"
+                items={["/ideas1/ideas11", "/ideas1/ideas12"]}
+                title="ideas1"
             >
                 <MenuItem
-                    id="/medicine/name"
-                    title="By Name"
+                    id="/ideas1/ideas11"
+                    title="ideas11"
                     level={2}
-                    onClick={() => onClick("/medicine/name")}
+                    onClick={() => onClick("/ideas1/ideas11")}
                 />
                 <MenuItem
-                    id="/medicine/category"
-                    title="By Category"
+                    id="/ideas1/ideas12"
+                    title="ideas12"
                     level={2}
-                    onClick={() => onClick("/medicine/category")}
+                    onClick={() => onClick("/ideas1/ideas12")}
                 />
             </MenuItem>
             <MenuItem
-                id="/nearestpharmacy"
-                title="Nearest Pharmacy"
-                onClick={() => onClick("/nearestpharmacy")}
+                id="ideas2"
+                title="ideas2"
+                onClick={() => onClick("/ideas2")}
+            />
+            <MenuItem
+                id="/ideas3"
+                title="ideas3"
+                onClick={() => onClick("/ideas3")}
             />
             <div className={classes.separator}></div>
             <MenuItem id="logout" title="Logout" icon={IconLogout} onClick={logout} />

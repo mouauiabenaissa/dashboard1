@@ -5,30 +5,15 @@ import { SidebarContext } from '../../../Hooks/useSidebar';
 import classes from "./IndexNavbar.module.css"
 import DropDown from '../../../Components/Dropdown/DropDown';
 function IndexNavbar() {
-    const { currentItem } = useContext(SidebarContext);
-    let title = 'titles'
 
-    switch (true) {
 
-        case ["/medicine", "/medicine/name", "/medicine/category"].includes(
-            currentItem
-        ):
-            title = "Find Medicine";
-            break;
-        case currentItem === "/nearestpharmacy":
-            title = "Nearest Pharmacy";
-            break;
-
-        default:
-            title = "";
-    }
     return (
         <Row
             className={classes.container}
             vertical="center"
             horizontal="space-between"
         >
-            <span className={classes.title}>{title}</span>
+            <span className={classes.title}>example</span>
             <Row vertical="center">
                 <DropDown
                     label={

@@ -6,7 +6,7 @@ import IndexNavbar from "./IndexNavbar/IndexNavbar";
 import { SidebarContext } from "../../Context/SidebarContext";
 import classes from "./Dashboard.module.css"
 import useWindowSize from "../../Hooks/useWindowSize"
-import FindMedicineByName from "./Pages/FindMedicineByName/FindMedicineByName";
+import Ideas2 from "./pages/ideas2Example/Ideas2";
 
 function Dashboard() {
     const { pathname } = useLocation();
@@ -27,23 +27,28 @@ function Dashboard() {
                         <Routes>
                             <Route
                                 exact
-                                path="/medicine"
-                                render={() => <div>medicine</div>}
+                                path="/ideas1"
+                                render={() => <div>ideas1</div>}
+
                             />
                             <Route
                                 exact
-                                path="/medicine/name"
-                                element={<FindMedicineByName />}
+                                path="/ideas1/ideas11"
+                                render={() => <div>ideas11</div>}
                             />
                             <Route
                                 exact
-                                path="/medicine/category"
-                                render={() => <div>category</div>}
+                                path="/ideas1/ideas12"
+                                render={() => <div>ideas12</div>}
+                            />
+                            <Route
+                                path="/ideas2"
+                                element={<Ideas2 />}
                             />
                             <Route
                                 exact
-                                path="/nearestpharmacy"
-                                render={() => <div>nearest</div>}
+                                path="/ideas3"
+                                render={() => <div>ideas3</div>}
                             />
                         </Routes>
                     </div>
